@@ -96,12 +96,13 @@ body
 	width: 					100%;
 	height: 				100%;
 	margin:					0px;
+
+	background-color:		rgb(250, 250, 250);
 }
 
 
 .topBanner
 {
-	float: 					center;
 	width:					100%;
 	height:					350px;
 	vertical-align: 		middle;
@@ -124,8 +125,8 @@ body
 .topName
 {
 	font-size: 				80px;
-	font-family: 			topFont;
-	font-weight: 			600;
+	font-family: 			'Quicksand', sans-serif;
+	font-weight: 			400;
 
 	color:					white;
 
@@ -138,8 +139,8 @@ body
 .topSubName
 {
 	font-size: 				40px;
-	font-family: 			topFont;
-	font-weight: 			500;
+	font-family: 			'Quicksand', sans-serif;
+	font-weight: 			400;
 
 	color:					rgb(161, 161, 161);
 
@@ -165,7 +166,7 @@ body
 	
 	background-color:		black;
 
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 			0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -184,13 +185,13 @@ body
 .topMenuBarLogo
 {
 	font-size: 				40px;
-	font-family: 			logoFont;
+	font-family: 			'Quicksand', sans-serif;
 	font-weight: 			700;
 
 	color:					white;
 
 	text-align: 			left;
-	vertical-align: 		center;
+	vertical-align: 		middle;
 
 	margin: 				0px;
 }
@@ -239,8 +240,82 @@ body
 	width: 					70%;
 	height: 				100%;
 
-	margin-top: 			75px;
-	
+	margin-top: 			70px;
+
 	margin-right: 			15%;
 	margin-left: 			15%;
+
+}
+
+
+.articleContainer
+{
+	background-color: 		white;
+
+	width:					90%;
+	min-height: 			300px;
+	max-height:				300px;
+
+	margin:					2.5%;
+	padding: 				1% 2% 2% 2%;
+
+	border-radius: 			10px;
+
+	box-shadow: 			0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+	overflow: 				hidden;
+
+	cursor: 				pointer;
+
+	transition: 			max-height 0.4s ease-in-out;
+	-moz-transition: 		max-height 0.4s ease-in-out;
+	-o-transition: 			max-height 0.4s ease-in-out;
+	-webkit-transition: 	max-height 0.4s ease-in-out;
+}
+
+
+.articleContainerOpened
+{
+	max-height:				1000px;
+}
+
+
+.articleTitle
+{
+	color:					rgb(0, 159, 180);
+
+	font-size: 				40px;
+	font-family: 			'Quicksand', sans-serif;
+	font-weight: 			500;
+}
+
+
+.articleDescription
+{
+	color:					rgb(119, 119, 119);
+
+	font-size: 				24px;
+	font-family: 			'Quicksand', sans-serif;
+	font-weight: 			400;
+}
+
+
+.articleContent
+{
+	color:					black;
+
+	font-size: 				24px;
+	font-family: 			'Quicksand', sans-serif;
+	font-weight: 			400;
+
+	transition: 			color 0.4s ease-in-out;
+	-moz-transition: 		color 0.4s ease-in-out;
+	-o-transition: 			color 0.4s ease-in-out;
+	-webkit-transition: 	color 0.4s ease-in-out;
+}
+
+
+.articleContentInvisibility
+{
+	color:					rgba(255, 255, 255, 0);
 }
